@@ -1,9 +1,15 @@
 import React from 'react'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import { Navbar, Sidebar, Footer } from './components'
+ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import  {Navbar , Sidebar, Footer} from './components'
 
 function App() {
-  return <h4>comfy sloth starter</h4>
+  return <>
+
+<h4>comfy sloth startxcer</h4>
+
+
+  </> 
+ 
 }
 
 export default App
