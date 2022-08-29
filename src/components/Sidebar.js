@@ -1,11 +1,11 @@
 import React from 'react'
-import logo from '../assets/logo.svg'
+// import logo from '../assets/logo.svg'
 import { Link } from 'react-router-dom'
 import { useProductsContext } from '../context/products_context'
 import { FaTimes } from 'react-icons/fa'
 import { links } from '../utils/constants'
 import styled from 'styled-components'
-import CartButtons from './CartButtons'
+import CartButton from './CartButton'
 import { useUserContext } from '../context/user_context'
 
 const Sidebar = () => {

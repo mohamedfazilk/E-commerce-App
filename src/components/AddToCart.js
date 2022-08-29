@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import { FaCheck } from 'react-icons/fa'
 import { useCartContext } from '../context/cart_context'
-import AmountButtons from './AmountButtons'
+import AmountButtons from './AmountButton'
 
 const AddToCart = () => {
   return <h4>addToCart </h4>
@@ -53,4 +53,5 @@ const Wrapper = styled.section`
     width: 140px;
   }
 `
+
 export default AddToCart
