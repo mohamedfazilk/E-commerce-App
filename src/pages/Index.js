@@ -1,7 +1,6 @@
 import Home from './HomePage'
-// import ProductsPage from './ProductsPage'
 import SingleProduct from './SingleProductPage';
-import ProductsPage from './ProudctsPage';
+import Products from './ProudctsPage';
 import About from './AboutPage'
 import Cart from './CartPage'
 import Error from './ErrorPage'
@@ -11,7 +10,7 @@ import AuthWrapper from './AuthWrapper'
 
 export {
   Home,
-  ProductsPage,
+  Products,
   SingleProduct,
   About,
   Cart,

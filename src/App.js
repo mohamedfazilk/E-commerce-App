@@ -1,7 +1,7 @@
 import React from 'react'
-import { BrowserRouter, Routes, Route } from
+import { BrowserRouter, Routes, Route, Switch } from
 'react-router-dom'
-import { Navbar, Sidebar, Footer } from './components'
+import { Navbar, Sidebar, Footer } from './components';
 
 import {
   Home,
@@ -10,16 +10,47 @@ import {
   Checkout,
   Error,
   About,
-  ProductsPage,
-  PrivateRoute,
-  AuthWrapper,
+  Products,
+  PrivateRoute
 } from './pages'
-import Testing from './Testing'
+
 
 function App() {
-  return<div>
-    <Testing/>
-  </div>
+  return(
+    <Router>
+      <Switch>
+        <Route exact path='/'>
+          <Home/>
+        </Route>
+
+        <Route exact path='/about'>
+          <About/>
+        </Route>
+
+        <Route exact path='cart'>
+          <Cart/>
+        </Route>
+
+        <Route exact path='/product'>
+          <Products/>
+        </Route>
+
+
+        <Route exact path='/products/:id'>
+          <SingleProduct/>
+        </Route>
+
+        <Route exact path='/checkout'>
+          <Checkout/>
+        </Route>
+
+        <Route exact path='*'>
+          <Error/>
+        </Route>
+
+      </Switch>
+  </Router>
+  )
   
 }
 export default App
